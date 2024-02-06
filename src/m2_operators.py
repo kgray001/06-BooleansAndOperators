@@ -3,7 +3,7 @@ t1 = "fox"
 t2 = "cat"
 
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   Write each of the functions below (each that takes two parameters and uses
 #   the appropriate operator from the reading) that simply returns the boolean
@@ -21,9 +21,45 @@ t2 = "cat"
 #   
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def equal(num1, num2):
+    result1 = bool(num1 == num2)
+    print(result1)
+    return result1
+
+def not_equal(num1, num2):
+    result2 = bool(num1 != num2)
+    print(result2)
+    return result2
+
+def greater_than(num1, num2):
+    result3 = bool(num1 > num2)
+    print(result3)
+    return result3
+
+def less_than(num1, num2):
+    result4 = bool(num1 < num2)
+    print(result4)
+    return result4
+
+def greater_than_or_equal_to(num1, num2):
+    result5 = bool(num1 >= num2)
+    print(result5)
+    return result5
+
+def less_than_or_equal_to(num1, num2):
+    result6 = bool(num1 <= num2)
+    print(result6)
+    return result6
+
+equal(2,2)
+not_equal(5,4)
+greater_than(9,8)
+less_than(2,3)
+greater_than_or_equal_to(4,4)
+less_than_or_equal_to(1,4)
 
 ###############################################################################
-# TODO: 1. (2 pts)
+# DONE: 1. (2 pts)
 #
 #   Write a line of code that returns True if the string
 #       t1 (defined above)
@@ -41,9 +77,11 @@ t2 = "cat"
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+print(t1 in txt)
+print(t2 in txt)
 
 ###############################################################################
-# TODO: 1. (1 pt)
+# DONE: 1. (1 pt)
 #
 #   Now, write a line of code that returns True if the string
 #       t1
@@ -53,3 +91,4 @@ t2 = "cat"
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+print(t1 is not t2)
